@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './RedTape_1.css'
 
-export default function RedTape_1() {
+export default function RedTape_3() {
 
     const [count , setCount] = useState(0)
 
@@ -23,7 +23,7 @@ export default function RedTape_1() {
             <div className='container'>
                 
                 <div className='image'>
-                    <img height={'400px'} src="Images/redTape-1.webp" alt="redTape" />
+                    <img height={'400px'} src="Images/redTape-3.webp" alt="redTape" />
                 </div>
 
                 <div className="description">

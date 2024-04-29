@@ -6,7 +6,6 @@ export default function Login() {
     <>
       <div className="login-page">
           <div className="login">
-            <h2>Login</h2>
             <label htmlFor="username">What's your email ?</label>
             <br />
             <input type="text" id="username" placeholder="Email" required="" />

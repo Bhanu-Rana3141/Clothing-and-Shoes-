@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
-import './RedTape_1.css'
+import './Hoodie_1.css'
 
-export default function RedTape_1() {
+export default function Jean_2() {
 
     const [count , setCount] = useState(0)
 
     const increment = () => {
-        if(count == 5) {
-            alert('You can select 5 items !!')
-        }
         setCount(count + 1)   
     }
 
@@ -20,15 +17,15 @@ export default function RedTape_1() {
 
     return (
         <>
-            <div className='container'>
+            <div className='hoodies'>
                 
-                <div className='image'>
-                    <img height={'400px'} src="Images/redTape-1.webp" alt="redTape" />
+                <div className='hoodie-img'>
+                    <img height={'400px'} src="Images/jean-2.jpeg" alt="jean" />
                 </div>
 
-                <div className="description">
-                    <p>RedTape Athleisure Shoes for Men |Cultured Round-Toe Shape, Cushioning Technology & Smart Ventilation</p>
-                    <p><img style={{height : '14px'}} src="Images\rupeeSymbol.png" alt="rupeeSymbol" />2999.00</p>
+                <div className="hoodie-description">
+                    <p>Jean</p>
+                    <p><img style={{height : '14px'}} src="Images\rupeeSymbol.png" alt="rupeeSymbol" />2,499.00</p>
                     <div className="quantitySelector">
                         <span className='minus' onClick={decrement} >-</span>
                         <span className='num'>{count}</span>

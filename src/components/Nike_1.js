@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './RedTape_1.css'
 
-export default function RedTape_1() {
+export default function Nike_1() {
 
     const [count , setCount] = useState(0)
 
@@ -23,12 +23,12 @@ export default function RedTape_1() {
             <div className='container'>
                 
                 <div className='image'>
-                    <img height={'400px'} src="Images/redTape-1.webp" alt="redTape" />
+                    <img height={'400px'} src="Images/Nike-1.webp" alt="nike" />
                 </div>
 
                 <div className="description">
-                    <p>RedTape Athleisure Shoes for Men |Cultured Round-Toe Shape, Cushioning Technology & Smart Ventilation</p>
-                    <p><img style={{height : '14px'}} src="Images\rupeeSymbol.png" alt="rupeeSymbol" />2999.00</p>
+                    <p>Nike Athleisure Shoes for Men |Cultured Round-Toe Shape, Cushioning Technology & Smart Ventilation</p>
+                    <p><img style={{height : '14px'}} src="Images\rupeeSymbol.png" alt="rupeeSymbol" />3999.00</p>
                     <div className="quantitySelector">
                         <span className='minus' onClick={decrement} >-</span>
                         <span className='num'>{count}</span>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 export default function Footer() {
@@ -6,31 +7,31 @@ export default function Footer() {
     <>  
         <div className="footer">
             <div className="footer-logo">
-                <a href="/"><img  width="80px" src="Images/footerLogo1.png" alt="logo"/></a>
-                <a href="/"><img  width="110px" style={{position: 'relative', bottom: '5px'}} src="Images/footerLogo2.png" alt="logo"/></a>
+                <Link to="/"><img  width="80px" src="Images/footerLogo1.png" alt="logo"/></Link>
+                <Link to="/"><img  width="110px" style={{position: 'relative', bottom: '5px'}} src="Images/footerLogo2.png" alt="logo"/></Link>
             </div>
 
             <div className="quick-links">
                 <p>Quick Links</p>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul> 
             </div>
 
             <div className="shop">
                 <p>Categories</p>
                 <ul>
-                    <li><a href="">Shoes</a></li>
-                    <li><a href="">Clothes</a></li>
+                    <li><Link to="/shoes">Shoes</Link></li>
+                    <li><Link to="/clothing">Clothes</Link></li>
                 </ul>
             </div>
 
             <div className="connect">
                 <p>Get in touch</p>
-                <a href="https://github.com/Bhanu-Rana3141"><img style={{ borderRadius: '50%' }} height='25px' src="Images/9_Github_logo.jpg" alt="github"/></a>
-                <a href="https://www.linkedin.com/in/bhanu-partap-singh-rana-875957272/"><img style={{ borderRadius: '10px'}}  height="25px" src="Images/10_Linkedin_logo.png" alt="linkedin"/></a>
-                <a href="https://www.instagram.com/bhanu.rana3826/"><img style={{borderRadius: '50%'}} height="25px" src="Images/11_InstagramLogo.png" alt="instagram"/></a>
+                <Link to="/github"><img style={{ borderRadius: '50%' }} height='25px' src="Images/9_Github_logo.jpg" alt="github"/></Link>
+                <Link to="/linkedin"><img style={{ borderRadius: '10px'}}  height="25px" src="Images/10_Linkedin_logo.png" alt="linkedin"/></Link>
+                <Link to="/instagram"><img style={{borderRadius: '50%'}} height="25px" src="Images/11_InstagramLogo.png" alt="instagram"/></Link>
             </div>
         </div>
 

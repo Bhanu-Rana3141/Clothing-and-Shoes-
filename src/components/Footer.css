@@ -33,6 +33,7 @@ ul {
 .quick-links a, .shop a {
     position: relative;
     right: 20px;
+    text-decoration: none;
 }
 
 .footer a {
