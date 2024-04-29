@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Shoes.css";
 
 export default function Shoes() {
@@ -10,7 +11,7 @@ export default function Shoes() {
 
       <div className="shoes">
         <div className="card">
-          <img src="Images\redTape-1.webp" alt="shoes" />
+          <Link to = '/redtape1' ><img src="Images\redTape-1.webp" alt="shoes" /></Link>
           <p style={{color: '#878787'}}>Red Tape</p>
           <p><img src="Images/rupeeSymbol.png"  alt=""/>1,061.00</p>
         </div>

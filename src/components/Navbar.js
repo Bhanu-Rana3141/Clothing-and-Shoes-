@@ -1,18 +1,20 @@
-import React from 'react'
+import React from 'react';
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <>
-      <div className="navbar">
-          <a href="/"><img id="img-logo" height={'60px'} src="Images/1_Logo.png" alt="Logo"/></a>
-          <div className="nav-links">
-              <a href="/">Home</a>
-              <a href="/shop">Shop</a>
-              <a href="/contact">Contact</a>
-          </div>
-          <button type="button" id="login-btn"><a href="/login">Login</a></button>
-      </div> 
-    </>
+    <nav>
+      <img height={'60px'} src="Images\1_Logo.png" alt="" />
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/shoes">Shoes</Link></li>
+        <li><Link to="/clothing">Clothes</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+        <button><Link to="/login">Login</Link></button>
+    </nav>
   );
-}
+};
+
+export default Navbar;

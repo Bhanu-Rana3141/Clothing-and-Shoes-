@@ -6,15 +6,14 @@ export default function Footer() {
     <>  
         <div className="footer">
             <div className="footer-logo">
-                <a href=""><img  width="80px" src="Images/footerLogo1.png" alt="logo"/></a>
-                <a href=""><img  width="110px" style={{position: 'relative', bottom: '5px'}} src="Images/footerLogo2.png" alt="logo"/></a>
+                <a href="/"><img  width="80px" src="Images/footerLogo1.png" alt="logo"/></a>
+                <a href="/"><img  width="110px" style={{position: 'relative', bottom: '5px'}} src="Images/footerLogo2.png" alt="logo"/></a>
             </div>
 
             <div className="quick-links">
                 <p>Quick Links</p>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul> 
             </div>
