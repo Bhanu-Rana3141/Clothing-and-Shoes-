@@ -34,7 +34,7 @@
   }
   
   /* Style button */
-  .lg-btn {
+  #lg-btn {
     background-color: #6674CC; /* Green color */
     color: white;
     padding: 10px 20px;
@@ -43,10 +43,9 @@
     cursor: pointer;
     position: relative;
     left: 7%;
-    margin-top: 15px;
   }
 
-  .lg-btn a  {
+  #lg-btn {
     text-decoration: none;
   }
   

@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Home from './components/Home';
 import Shoes from './components/Shoes';
 import Clothing from './components/Clothing';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Cart from './components/Cart';
 import RedTape_1 from './components/RedTape_1';
 import RedTape_2 from './components/RedTape_2';
 import RedTape_3 from './components/RedTape_3';
@@ -41,6 +42,25 @@ import Jean_3 from './components/Jean_3';
 import Jean_4 from './components/Jean_4';
 
 const App = () => {
+
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+  };
+
+  const removeFromCart = (index) => {
+    const newCart = [...cart];
+    newCart.splice(index, 1);
+    setCart(newCart);
+  };
+
+  const updateQuantity = (index, newQuantity) => {
+    const newCart = [...cart];
+    newCart[index].quantity = newQuantity;
+    setCart(newCart);
+  };
+
   return (
     <>
       <Navbar />
@@ -62,7 +82,7 @@ const App = () => {
           <Route path="/nike2" element={<Nike_2/>} />
           <Route path="/nike3" element={<Nike_3/>} />
           <Route path="/nike4" element={<Nike_4/>} />
-          <Route path="/campus1" element={<Campus_1/>} />
+          <Route path="/campus1" element={<Campus_1 addToCart={addToCart} />} />
           <Route path="/campus2" element={<Campus_2/>} />
           <Route path="/campus3" element={<Campus_3/>} />
           <Route path="/campus4" element={<Campus_4/>} />
@@ -80,12 +100,11 @@ const App = () => {
           <Route path="/shirt4" element={<Shirt_4/>} />
           <Route path="/jean1" element={<Jean_1/>} />
           <Route path="/jean2" element={<Jean_2/>} />
-          <Route path="/jean3" element={<Jean_3/>} />
+          <Route path="/jean3" element={<Jean_3 addToCart={addToCart} removeFromCart={removeFromCart} updateQuantity={updateQuantity}/>} />
           <Route path="/jean4" element={<Jean_4/>} />
           <Route path="/jean4" element={<Jean_4/>} />
-
+          <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} updateQuantity={updateQuantity}/>}/>
         </Routes>
-      <Footer /> 
     </>
   );
 };

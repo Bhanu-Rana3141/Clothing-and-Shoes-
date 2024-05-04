@@ -29,9 +29,9 @@ export default function Footer() {
 
             <div className="connect">
                 <p>Get in touch</p>
-                <Link to="/github"><img style={{ borderRadius: '50%' }} height='25px' src="Images/9_Github_logo.jpg" alt="github"/></Link>
-                <Link to="/linkedin"><img style={{ borderRadius: '10px'}}  height="25px" src="Images/10_Linkedin_logo.png" alt="linkedin"/></Link>
-                <Link to="/instagram"><img style={{borderRadius: '50%'}} height="25px" src="Images/11_InstagramLogo.png" alt="instagram"/></Link>
+                <a href="https://github.com/Bhanu-Rana3141"><img style={{ borderRadius: '50%' }} height='25px' src="Images/9_Github_logo.jpg" alt="github"/></a>
+                <a href="https://www.linkedin.com/in/bhanu-partap-singh-rana-875957272/"><img style={{ borderRadius: '10px'}}  height="25px" src="Images/10_Linkedin_logo.png" alt="linkedin"/></a>
+                <a href="https://www.instagram.com/"><img style={{borderRadius: '50%'}} height="25px" src="Images/11_InstagramLogo.png" alt="instagram"/></a>
             </div>
         </div>
 

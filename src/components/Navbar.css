@@ -25,6 +25,8 @@ nav ul {
 
 nav li {
   margin: 0 1rem;
+  position: relative;
+  left: 100px;
 }
 
 nav a {
@@ -32,6 +34,11 @@ nav a {
   color: #000000; 
   font-size: 16px;
   font-weight: 500;
+}
+
+.addToCart {
+  position: relative;
+  left: 120px;
 }
 
 button {

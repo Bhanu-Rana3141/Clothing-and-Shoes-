@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Login.css'
 
 export default function Login() {
+    
   return (
     <>
       <div className="login-page">
@@ -18,11 +20,7 @@ export default function Login() {
               placeholder="Password"
               required=""
             />
-            <button className='lg-btn'>
-              <a id="login-button" href="index.html">
-                Login
-              </a>
-            </button> 
+            <Link to="/" id="lg-btn">Login</Link>
             <div className="footer-links">
               <a href="">Create Account</a>
               <a href="" style={{position : 'relative', left : '30px'}}>Forgot your password?</a>

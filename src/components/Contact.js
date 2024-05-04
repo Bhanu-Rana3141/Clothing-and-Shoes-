@@ -1,7 +1,14 @@
 import React from 'react'
 import './Contact.css'
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
+
+  const call = () => {
+    alert("Your message is submitted successfully !!")
+    window.location.reload();
+  }
+
   return (
     <div className="contact">
     <div className="form">
@@ -14,7 +21,7 @@ export default function Contact() {
         Email <span style={{ color: "red" }}>*</span>
         <br />
         <input
-          type="password"
+          type="email"
           name=""
           id="email"
           placeholder="Enter your email"
@@ -53,9 +60,7 @@ export default function Contact() {
       </label>
       <br />
       <br />
-      <button id="btn">
-        <a href="">Submit</a>
-      </button>
+      <button id="btn" onClick={call}> Submit </button>
     </div>
   </div>
   

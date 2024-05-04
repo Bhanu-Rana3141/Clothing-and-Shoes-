@@ -18,6 +18,8 @@ export default function Campus_2() {
         }
     }
 
+    
+
     return (
         <>
             <div className='container'>

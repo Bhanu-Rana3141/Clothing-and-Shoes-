@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'; // Import PropTypes
 import './Hoodie_1.css'
 
-export default function Jean_3() {
+export default function Jean_3({ addToCart }) {
 
     const [count , setCount] = useState(0)
 
@@ -14,6 +15,16 @@ export default function Jean_3() {
             setCount(count - 1)
         }
     }
+
+    // Add to cart functionality
+    const handleAddToCart = () => {
+        addToCart({
+          name: "Jean",
+          price: 2499,
+          quantity: count
+        });
+        alert("Added to Cart !!")
+    };
 
     return (
         <>
@@ -31,10 +42,14 @@ export default function Jean_3() {
                         <span className='num'>{count}</span>
                         <span className='plus' onClick={increment} >+</span>
                     </div>
-                    <button className='addCartBtn'>Add To Cart</button>
+                    <button className='addCartBtn' onClick={handleAddToCart}>Add To Cart</button>
                 </div>   
 
             </div>
         </>
     )
 }
+
+Jean_3.propTypes = {
+    addToCart: PropTypes.func.isRequired // PropTypes declaration for addToCart prop
+};
