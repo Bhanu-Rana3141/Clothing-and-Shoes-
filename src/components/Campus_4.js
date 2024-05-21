@@ -25,7 +25,7 @@ export default function Campus_4({ addToCart })
           price: 1999,
           quantity: count
         });
-        alert('Added to Cart !!')
+        alert('Added to Cart !!');
     };
 
     return (
