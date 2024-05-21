@@ -21,7 +21,7 @@ export default function Campus_1({ addToCart }) {
     const handleAddToCart = () => {
         addToCart({
           name: "Campus Shoe",
-          price: 2499,
+          price: 1999,
           quantity: count
         });
         alert('Added to Cart !!')

@@ -70,39 +70,39 @@ const App = () => {
           <Route path="/clothing" element={<Clothing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/redtape1" element={<RedTape_1/>} />
-          <Route path="/redtape2" element={<RedTape_2/>} />
-          <Route path="/redtape3" element={<RedTape_3/>} />
-          <Route path="/redtape4" element={<RedTape_4/>} />
-          <Route path="/puma1" element={<Puma_1/>} />
-          <Route path="/puma2" element={<Puma_2/>} />
-          <Route path="/puma3" element={<Puma_3/>} />
-          <Route path="/puma4" element={<Puma_4/>} />
-          <Route path="/nike1" element={<Nike_1/>} />
-          <Route path="/nike2" element={<Nike_2/>} />
-          <Route path="/nike3" element={<Nike_3/>} />
-          <Route path="/nike4" element={<Nike_4/>} />
+          <Route path="/redtape1" element={<RedTape_1 addToCart={addToCart}/>} />
+          <Route path="/redtape2" element={<RedTape_2 addToCart={addToCart}/>} />
+          <Route path="/redtape3" element={<RedTape_3 addToCart={addToCart}/>} />
+          <Route path="/redtape4" element={<RedTape_4 addToCart={addToCart}/>} />
+          <Route path="/puma1" element={<Puma_1 addToCart={addToCart}/>} />
+          <Route path="/puma2" element={<Puma_2 addToCart={addToCart}/>} />
+          <Route path="/puma3" element={<Puma_3 addToCart={addToCart}/>} />
+          <Route path="/puma4" element={<Puma_4 addToCart={addToCart}/>} />
+          <Route path="/nike1" element={<Nike_1 addToCart={addToCart}/>} />
+          <Route path="/nike2" element={<Nike_2 addToCart={addToCart}/>} />
+          <Route path="/nike3" element={<Nike_3 addToCart={addToCart}/>} />
+          <Route path="/nike4" element={<Nike_4 addToCart={addToCart}/>} />
           <Route path="/campus1" element={<Campus_1 addToCart={addToCart} />} />
-          <Route path="/campus2" element={<Campus_2/>} />
-          <Route path="/campus3" element={<Campus_3/>} />
-          <Route path="/campus4" element={<Campus_4/>} />
-          <Route path="/hoodie1" element={<Hoodie_1/>} />
-          <Route path="/hoodie2" element={<Hoodie_2/>} />
-          <Route path="/hoodie3" element={<Hoodie_3/>} />
-          <Route path="/hoodie4" element={<Hoodie_4/>} />
-          <Route path="/tshirt1" element={<Tshirt_1/>} />
-          <Route path="/tshirt2" element={<Tshirt_2/>} />
-          <Route path="/tshirt3" element={<Tshirt_3/>} />
-          <Route path="/tshirt4" element={<Tshirt_4/>} />
-          <Route path="/shirt1" element={<Shirt_1/>} />
-          <Route path="/shirt2" element={<Shirt_2/>} />
-          <Route path="/shirt3" element={<Shirt_3/>} />
-          <Route path="/shirt4" element={<Shirt_4/>} />
-          <Route path="/jean1" element={<Jean_1/>} />
-          <Route path="/jean2" element={<Jean_2/>} />
+          <Route path="/campus2" element={<Campus_2 addToCart={addToCart}/>} />
+          <Route path="/campus3" element={<Campus_3 addToCart={addToCart}/>} />
+          <Route path="/campus4" element={<Campus_4 addToCart={addToCart}/>} />
+          <Route path="/hoodie1" element={<Hoodie_1 addToCart={addToCart}/>} />
+          <Route path="/hoodie2" element={<Hoodie_2 addToCart={addToCart}/>} />
+          <Route path="/hoodie3" element={<Hoodie_3 addToCart={addToCart}/>} />
+          <Route path="/hoodie4" element={<Hoodie_4 addToCart={addToCart}/>} />
+          <Route path="/tshirt1" element={<Tshirt_1 addToCart={addToCart}/>} />
+          <Route path="/tshirt2" element={<Tshirt_2 addToCart={addToCart}/>} />
+          <Route path="/tshirt3" element={<Tshirt_3 addToCart={addToCart}/>} />
+          <Route path="/tshirt4" element={<Tshirt_4 addToCart={addToCart}/>} />
+          <Route path="/shirt1" element={<Shirt_1 addToCart={addToCart}/>} />
+          <Route path="/shirt2" element={<Shirt_2 addToCart={addToCart}/>} />
+          <Route path="/shirt3" element={<Shirt_3 addToCart={addToCart}/>} />
+          <Route path="/shirt4" element={<Shirt_4 addToCart={addToCart}/>} />
+          <Route path="/jean1" element={<Jean_1 addToCart={addToCart}/>} />
+          <Route path="/jean2" element={<Jean_2 addToCart={addToCart}/>} />
           <Route path="/jean3" element={<Jean_3 addToCart={addToCart} removeFromCart={removeFromCart} updateQuantity={updateQuantity}/>} />
-          <Route path="/jean4" element={<Jean_4/>} />
-          <Route path="/jean4" element={<Jean_4/>} />
+          <Route path="/jean4" element={<Jean_4 addToCart={addToCart}/>} />
+          <Route path="/jean4" element={<Jean_4 addToCart={addToCart}/>} />
           <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} updateQuantity={updateQuantity}/>}/>
         </Routes>
     </>

@@ -11,7 +11,7 @@ export default function Login() {
             <label htmlFor="username">What's your email ?</label>
             <br />
             <input type="text" id="username" placeholder="Email" required="" />
-            <label htmlFor="password">Your password ?</label>
+            <label htmlFor="password" required>Your password ?</label>
             <br />
             <input
               type="password"

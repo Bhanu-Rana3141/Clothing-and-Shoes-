@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Hoodie_1.css'
 
-export default function Jean_1() {
+export default function Jean_1({ addToCart }) {
 
     const [count , setCount] = useState(0)
 
@@ -14,6 +14,15 @@ export default function Jean_1() {
             setCount(count - 1)
         }
     }
+
+    const handleAddToCart = () => {
+        addToCart({
+          name: "Jeans",
+          price: 2499,
+          quantity: count
+        });
+        alert('Added to Cart !!')
+    };
 
     return (
         <>
@@ -31,7 +40,7 @@ export default function Jean_1() {
                         <span className='num'>{count}</span>
                         <span className='plus' onClick={increment} >+</span>
                     </div>
-                    <button className='addCartBtn'>Add To Cart</button>
+                    <button className='addCartBtn' onClick={handleAddToCart}>Add To Cart</button>
                 </div>   
 
             </div>
